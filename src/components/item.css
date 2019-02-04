@@ -1,0 +1,27 @@
+.accordion-item * {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.accordion-item .title {
+    height: 20px;
+    background-color: steelblue;
+    color:white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.accordion-item .content {
+    height: 150px;
+    overflow-y: scroll;
+    background-color: beige;
+    transition: all 1s;
+    -webkit-transition: all 0.3s;
+    z-index: 0;
+}
+
+.accordion-item .content.close {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
